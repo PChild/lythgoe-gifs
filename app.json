@@ -1,0 +1,7 @@
+{
+  "name": "Lythgoe Gifs",
+  "description": "Deep metaphors on the state of FRC",
+  "logo": "http://www.team2363.org/images/branding/helix-app.png",
+  "keywords": ["frc", "gif", "meme", "lythgoe", "robotics"],
+  "image": "heroku/nodejs"
+}

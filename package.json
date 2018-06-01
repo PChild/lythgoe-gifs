@@ -1,0 +1,28 @@
+{
+  "name": "lythgoe-gifs",
+  "version": "0.3.0",
+  "description": "Deep metaphors on the state of FRC",
+  "engines": {
+    "node": "8.9.1"
+  },
+  "homepage": "http://www.team2363.org/",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js"
+  },
+  "dependencies": {
+    "ejs": "^2.5.6",
+    "express": "^4.15.2"
+  },
+  "devDependencies": {
+    "request": "^2.81.0",
+    "tape": "^4.7.0"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
+}
