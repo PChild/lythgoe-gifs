@@ -5,8 +5,6 @@ $.get("https://api.apify.com/v1/RsXxWaYMxHPjuX3q9/crawlers/e8Lg5LqmfPgcY5eDy/las
   let textPosts = data.filter(item => !item.hasGif);
   let template = Handlebars.compile($('#gifTemplate').html());
 
-  $('body').append('<audio src="helixAudio.mp3" autoplay loop hidden></audio>');
-
   $(gifPosts).each(i => {
     let element = template({
       "imgSrc": gifPosts[i].gifAddress,
