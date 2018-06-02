@@ -33,7 +33,7 @@
         </div>
       </div>
     </div>
-    <audio id="player" src="helixAudio.mp3" autoplay loop hidden></audio>
+    <audio id="player" src="helixAudio.mp3?v=1" autoplay loop hidden></audio>
 </body>
 <script>
   $(window).unload(function () {
@@ -43,6 +43,7 @@
     player.src = "helixAudio.mp3?v=" + d.getMilliseconds();
     player.load();
     player.play();
+    console.log("fired play")
   });
 </script>
 
