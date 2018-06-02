@@ -9,7 +9,9 @@
 <link rel="stylesheet" type="text/css" href="/stylesheets/main.css" />
 <script id="gifTemplate" type="text/x-handlebars-template">
   <div class="card border-0 m-2" style="min-width: 300px; max-width: 500px;">
-    <img class="card-img-top" src="{{imgSrc}}">
+    <a href="{{imgSrc}}">
+      <img class="card-img-top" src="{{imgSrc}}" onerror="this.src='lythNo.png'">
+    </a>
     <div class="card-body m-0 p-0">
       <h5 class="card-title">{{postDate}}</h5>
     </div>
