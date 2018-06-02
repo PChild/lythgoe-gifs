@@ -1,6 +1,5 @@
 .jumbotron {
   color: white;
-  margin -top: 30px;
 }
 
 .jumbotron .lang-logo {
@@ -35,4 +34,8 @@
 img {
   width: 100%;
   max-width: 600px;
+}
+
+body {
+  margin-top: 50px;
 }

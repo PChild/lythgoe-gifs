@@ -1,5 +1,4 @@
 $.get("https://api.apify.com/v1/RsXxWaYMxHPjuX3q9/crawlers/e8Lg5LqmfPgcY5eDy/lastExec/results?token=qhmGuje8Kp6npxmfs2fQMYAQu", function (baseData) {
-  console.log(baseData[0]);
   let data = baseData[0].pageFunctionResult;
 
   let gifPosts = data.filter(item => item.hasGif);
