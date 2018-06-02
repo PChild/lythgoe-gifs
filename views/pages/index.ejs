@@ -37,9 +37,13 @@
 </body>
 <script>
   $(document).ready(function () {
+    var d = new Date();
+    $('gifList').click();
     player = $("#player")[0];
+    player.src = "";
+    player.src = "helixAudio.mp3?v=" + d.getMilliseconds();
+    player.load();
     player.play();
-    player.src = "helixAudio.mp3";
   });
 </script>
 
