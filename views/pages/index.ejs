@@ -7,6 +7,7 @@
 
 <body>
   <% include ../partials/nav.ejs %>
+    <audio id="player" src="helixAudio.mp3?v=1" autoplay loop hidden></audio>
     <div class="jumbotron text-center helix-yellow">
       <div class="container">
         <div class="lang-logo helix-purple">
@@ -33,18 +34,6 @@
         </div>
       </div>
     </div>
-    <audio id="player" src="helixAudio.mp3?v=1" autoplay loop hidden></audio>
 </body>
-<script>
-  $(window).unload(function () {
-    var d = new Date();
-    player = $("#player")[0];
-    player.src = "";
-    player.src = "helixAudio.mp3?v=" + d.getMilliseconds();
-    player.load();
-    player.play();
-    console.log("fired play")
-  });
-</script>
 
 </html>
