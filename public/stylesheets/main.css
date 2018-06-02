@@ -2,10 +2,6 @@
   color: white;
 }
 
-.navbar + .jumbotron {
-  margin-top: -20px;
-}
-
 .jumbotron .lang-logo {
   display: block;
   border-radius: 50%;
@@ -33,4 +29,9 @@
   border-color: #662E91;
   color: white !important;
   font-size: larger;
+}
+
+img {
+  width: 100%;
+  max-width: 600px;
 }
