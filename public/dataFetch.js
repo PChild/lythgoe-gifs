@@ -15,5 +15,5 @@ $.get("https://api.apify.com/v1/RsXxWaYMxHPjuX3q9/crawlers/e8Lg5LqmfPgcY5eDy/las
   });
 
   $('#statList').append("<h4><li>In his last 200 posts Matt has posted " + gifPosts.length + " gifs and " + textPosts.length + " text posts.</li></h4>");
-  $('#statList').append("<h4><li>Matt's last text post was: <i>\"" + textPosts[0].text + "\"</i> Posted: " + textPosts[0].date + ".</li></h4>");
+  $('#statList').append("<h4><li>Matt's last text post was: <i>\"" + textPosts[0].text + "\"</i> - " + textPosts[0].date + ".</li></h4>");
 })
