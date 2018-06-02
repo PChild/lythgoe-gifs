@@ -2,18 +2,8 @@
   color: white;
 }
 
-.jumbotron p {
-  color: #d9ccee;
-  max-width: 75%;
-  margin: 1em auto 2em;
-}
-
 .navbar + .jumbotron {
   margin-top: -20px;
-}
-
-.navbar {
-  box-shadow:
 }
 
 .jumbotron .lang-logo {
@@ -40,4 +30,7 @@
 
 .helix-purple {
   background: #662E91;
+  border-color: #662E91;
+  color: white !important;
+  font-size: larger;
 }
