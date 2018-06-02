@@ -8,7 +8,9 @@ $.get("https://api.apify.com/v1/RsXxWaYMxHPjuX3q9/crawlers/e8Lg5LqmfPgcY5eDy/las
   $(gifPosts).each(i => {
     let element = template({
       "imgSrc": gifPosts[i].gifAddress,
-      "postDate": gifPosts[i].date
+      "postDate": gifPosts[i].date,
+      "threadTitle": gifPosts[i].threadTitle,
+      "threadLink": gifPosts[i].threadLink
     });
 
     $('#gifList').append(element);
