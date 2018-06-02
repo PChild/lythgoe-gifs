@@ -33,12 +33,11 @@
         </div>
       </div>
     </div>
-    <audio id="player" autoplay loop hidden></audio>
+    <audio id="player" src="helixAudio.mp3" autoplay loop hidden></audio>
 </body>
 <script>
-  $(document).ready(function () {
+  $(window).unload(function () {
     var d = new Date();
-    $('gifList').click();
     player = $("#player")[0];
     player.src = "";
     player.src = "helixAudio.mp3?v=" + d.getMilliseconds();
