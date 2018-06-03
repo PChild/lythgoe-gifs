@@ -5,7 +5,8 @@
   "engines": {
     "node": "8.9.1"
   },
-  "homepage": "http://www.team2363.org/",
+  "repository": "https://github.com/PChild/lythgoe-gifs",
+  "homepage": "https://lythgoe-gifs.herokuapp.com",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
@@ -15,7 +16,6 @@
     "express": "^4.15.2"
   },
   "devDependencies": {
-    "request": "^2.87.0",
     "tape": "^4.7.0"
   },
   "keywords": [
@@ -23,5 +23,5 @@
     "memes",
     "lythgoe"
   ],
-  "license": "MIT"
+  "license": "GPL-3.0"
 }

@@ -1,5 +1,6 @@
-.jumbotron {
-  color: white;
+.jumbotron h1 {
+  color: #662E91;
+  font-weight: bold;
 }
 
 .jumbotron .lang-logo {
@@ -17,7 +18,8 @@
 }
 
 .helix-yellow {
-  color: white !important;
+  color: #662E91;
+  font-weight: bold;
   font-size: larger;
   background: #fdb813;
   border-color: #fdb813;
@@ -25,10 +27,12 @@
 }
 
 .helix-purple {
+  font-weight: bold;
+  color: #fdb813;
   background: #662E91;
   border-color: #662E91;
-  color: white !important;
   font-size: larger;
+  border-radius: 0;
 }
 
 img {
