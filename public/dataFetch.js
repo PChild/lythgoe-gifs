@@ -24,8 +24,12 @@ $.get("https://api.apify.com/v1/RsXxWaYMxHPjuX3q9/crawlers/e8Lg5LqmfPgcY5eDy/las
       effect: "fadeIn",
       effectTime: 500,
       threshold: 0,
+      beforeLoad: function (element) {
+        element[0].setAttribute('src', "");
+      },
       onError: function (element) {
         element[0].setAttribute('src', 'lythNo.png');
+        console.log(element);
       }
     });
   });
