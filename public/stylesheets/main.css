@@ -51,6 +51,11 @@ a {
 }
 
 .footer-link {
+  color: #fdb813;
+  text-decoration: underline;
+}
+
+.footer-link:hover {
   color: white;
 }
 
