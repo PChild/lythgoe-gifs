@@ -45,3 +45,15 @@ img.lazy {
 body {
   margin-top: 50px;
 }
+
+a {
+  color: #662E91;
+}
+
+.footer-link {
+  color: white;
+}
+
+a:hover {
+  color: #fdb813;
+}
