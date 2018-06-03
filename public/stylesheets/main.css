@@ -35,12 +35,9 @@
   border-radius: 0;
 }
 
-img {
+img.lazy {
   width: 100%;
   max-width: 600px;
-}
-
-img.lazy {
   background-image: url('/loading.gif');
   background-repeat: no-repeat;
   background-position: 50% 50%;
