@@ -1,3 +1,7 @@
+function findDuplicates(gifPosts) {
+
+}
+
 $.get("https://api.apify.com/v1/RsXxWaYMxHPjuX3q9/crawlers/e8Lg5LqmfPgcY5eDy/lastExec/results?token=qhmGuje8Kp6npxmfs2fQMYAQu", function (baseData) {
   let data = baseData[0].pageFunctionResult;
 
@@ -11,9 +15,12 @@ $.get("https://api.apify.com/v1/RsXxWaYMxHPjuX3q9/crawlers/e8Lg5LqmfPgcY5eDy/las
     postDate: textPosts[0].date,
     threadLink: textPosts[0].threadLink,
     threadTitle: textPosts[0].threadTitle
-  })
+  });
+
+  let uniqueGifs = [...new Set(gifPosts.map(item => item.gifAddress.substr(14)))].length
 
   $('#statList').append("<h4><li>In his last 200 posts Matt has posted " + gifPosts.length + " GIFs and " + textPosts.length + " text posts.</li></h4>");
+  $('#statList').append("<h4><li>" + uniqueGifs + " out of " + gifPosts.length + " of Matt's GIFs have been unique.</li></h4>");
   $('#statList').append(element);
 
   $(gifPosts).each(i => {
