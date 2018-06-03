@@ -5,6 +5,9 @@ $.get("https://api.apify.com/v1/RsXxWaYMxHPjuX3q9/crawlers/e8Lg5LqmfPgcY5eDy/las
   let textPosts = data.filter(item => !item.hasGif);
   let template = Handlebars.compile($('#gifTemplate').html());
 
+  $('#statList').append("<h4><li>In his last 200 posts Matt has posted " + gifPosts.length + " GIFs and " + textPosts.length + " text posts.</li></h4>");
+  $('#statList').append("<h4><li>Matt's last text post was: <i>\"" + textPosts[0].text + "\"</i> - " + textPosts[0].date + ".</li></h4>");
+
   $(gifPosts).each(i => {
     let element = template({
       "imgSrc": gifPosts[i].gifAddress,
@@ -16,6 +19,14 @@ $.get("https://api.apify.com/v1/RsXxWaYMxHPjuX3q9/crawlers/e8Lg5LqmfPgcY5eDy/las
     $('#gifList').append(element);
   });
 
-  $('#statList').append("<h4><li>In his last 200 posts Matt has posted " + gifPosts.length + " GIFs and " + textPosts.length + " text posts.</li></h4>");
-  $('#statList').append("<h4><li>Matt's last text post was: <i>\"" + textPosts[0].text + "\"</i> - " + textPosts[0].date + ".</li></h4>");
+  $(function () {
+    $('.lazy').lazy({
+      effect: "fadeIn",
+      effectTime: 500,
+      threshold: 0,
+      onError: function (element) {
+        element[0].setAttribute('src', 'lythNo.png');
+      }
+    });
+  });
 })

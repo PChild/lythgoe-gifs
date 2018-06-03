@@ -36,6 +36,12 @@ img {
   max-width: 600px;
 }
 
+img.lazy {
+  background-image: url('/loading.gif');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
 body {
   margin-top: 50px;
 }

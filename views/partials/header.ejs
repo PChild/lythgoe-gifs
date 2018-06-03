@@ -15,12 +15,14 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.plugins.min.js"></script>
 <script src="/handlebars.js"></script>
 <link rel="stylesheet" type="text/css" href="/stylesheets/main.css" />
 <script id="gifTemplate" type="text/x-handlebars-template">
   <div class="card border-0 m-2" style="min-width: 300px; max-width: 500px;">
     <a target="_blank" href="{{imgSrc}}">
-      <img class="card-img-top" src="{{imgSrc}}" onerror="this.src='lythNo.png'">
+      <img class="lazy card-img-top" data-src="{{imgSrc}}">
     </a>
     <div class="card-body m-0 p-0">
       <h5 class="card-title">{{postDate}} in <a target="_blank" href="{{threadLink}}">{{threadTitle}}</a></h5>
