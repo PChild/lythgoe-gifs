@@ -1,65 +1,41 @@
-.jumbotron h1 {
-  color: #662E91;
-  font-weight: bold;
-}
-
-.jumbotron .lang-logo {
-  display: block;
-  border-radius: 50%;
-  overflow: hidden;
-  width: 100px;
-  height: 100px;
-  margin: auto;
-  border: 2px solid white;
-}
-
-.jumbotron .lang-logo img {
-  max-width: 100%;
-}
-
-.helix-yellow {
-  color: #662E91;
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans");
+.mt-green {
+  color: #000;
   font-weight: bold;
   font-size: larger;
-  background: #fdb813;
-  border-color: #fdb813;
+  background: #00b259;
+  border-color: #00b259;
   border-radius: 0;
 }
 
-.helix-purple {
+.mt-black {
   font-weight: bold;
-  color: #fdb813;
-  background: #662E91;
-  border-color: #662E91;
+  color: #fff;
+  background: #000;
+  border-color: #000;
   font-size: larger;
   border-radius: 0;
-}
-
-img.lazy {
-  width: 100%;
-  max-width: 600px;
-  background-image: url('/loading.gif');
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
 }
 
 body {
-  margin-top: 50px;
+    background-image: url('/dark-triangles.png');
+    margin-top: 60px;
+    color: #fff;
 }
 
 a {
-  color: #662E91;
+    color: #eee;
 }
 
 .footer-link {
-  color: #fdb813;
+  color: #333;
   text-decoration: underline;
 }
 
 .footer-link:hover {
-  color: white;
+  color: #555;
 }
 
-a:hover {
-  color: #fdb813;
+* {
+    font-family: 'Fira Sans', sans-serif;
 }
