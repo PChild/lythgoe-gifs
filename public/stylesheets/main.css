@@ -27,6 +27,10 @@ a {
     color: #eee;
 }
 
+a:hover {
+    color: #ddd;
+}
+
 .footer-link {
   color: #333;
   text-decoration: underline;
